@@ -4,10 +4,12 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <nav className="NavBar">
-      About me, Sam
-      <CustomButton id="Home" props={{ value: "home" }} />
-      <CustomButton id="About Me" props={{ value: "About Me" }} />
-      <CustomButton id="Skills" props={{ value: "Skills" }} />
+      <div className="nav-div">
+        About me, Sam
+        <CustomButton id="Home" value="Home" className="HoverButton" />
+        <CustomButton id="About Me" value="About Me" className="HoverButton" />
+        <CustomButton id="Skills" value="Skills" className="HoverButton" />
+      </div>
     </nav>
   );
 };

@@ -2,4 +2,24 @@ button {
   padding: 1rem;
   background-color: green;
   color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.HoverButton {
+  padding: 1rem;
+  background-color: transparent;
+  color: black;
+  transition: 0.2s ease;
+}
+
+.HoverButton:hover {
+  transform: scale(1.03);
+  padding: 1rem;
+  background-color: blue;
+  color: black;
+}
+
+.None {
+  display: none;
 }

@@ -1,12 +1,13 @@
 import "./custombutton.css";
 
 /**
- * Props should be sent as a object with value as a property
- * @param {*} props
+ * Props should be sent as a object with
+ * @param {*} value
+ * @param {*} className
  * @returns
  */
-const CustomButton = ({ props }) => {
-  return <button>{props.value}</button>;
+const CustomButton = ({ value, className }) => {
+  return <button className={className ?? "None"}>{value}</button>;
 };
 
 export default CustomButton;
