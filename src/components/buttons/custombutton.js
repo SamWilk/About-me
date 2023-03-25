@@ -1,3 +1,5 @@
+import "./custombutton.css";
+
 /**
  * Props should be sent as a object with value as a property
  * @param {*} props
