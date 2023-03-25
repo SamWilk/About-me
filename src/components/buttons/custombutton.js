@@ -4,10 +4,6 @@
  * @returns
  */
 const CustomButton = ({ props }) => {
-  if (props.isSubmit) {
-    // return a different component
-  }
-
   return <button>{props.value}</button>;
 };
 

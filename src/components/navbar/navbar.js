@@ -1,10 +1,13 @@
 import CustomButton from "../buttons/custombutton";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="NavBar">
       Navbar here
-      <CustomButton props={{ value: "home", isSubmit: true }} />
+      <CustomButton id="Home" props={{ value: "home" }} />
+      <CustomButton id="About Me" props={{ value: "About Me" }} />
+      <CustomButton id="Skills" props={{ value: "Skills" }} />
     </nav>
   );
 };
