@@ -1,4 +1,4 @@
-import CustomButton from "../buttons/custombutton";
+import LinkButton from "../buttons/linkbutton";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -6,9 +6,14 @@ const Navbar = () => {
     <nav className="NavBar">
       <div className="nav-div">
         About me, Sam
-        <CustomButton id="Home" value="Home" className="HoverButton" />
-        <CustomButton id="About Me" value="About Me" className="HoverButton" />
-        <CustomButton id="Skills" value="Skills" className="HoverButton" />
+        <LinkButton id="Home" value="Home" path="/" className="HoverButton" />
+        <LinkButton
+          id="About Me"
+          value="About Me"
+          path="/about-me"
+          className="HoverButton"
+        />
+        <LinkButton id="Skills" value="Skills" className="HoverButton" />
       </div>
     </nav>
   );

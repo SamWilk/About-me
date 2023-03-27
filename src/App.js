@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -7,9 +8,9 @@ function App() {
       <header>
         <Navbar />
       </header>
-      <body>
-        <h3>Hello Welcome to a site about me!</h3>
-      </body>
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
