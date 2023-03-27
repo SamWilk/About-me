@@ -6,14 +6,19 @@ const Navbar = () => {
     <nav className="NavBar">
       <div className="nav-div">
         About me, Sam
-        <LinkButton id="Home" value="Home" path="/" className="HoverButton" />
+        <LinkButton id="Home" value="Home" path="/" className="Linkbutton" />
         <LinkButton
           id="About Me"
           value="About Me"
           path="/about-me"
-          className="HoverButton"
+          className="Linkbutton"
         />
-        <LinkButton id="Skills" value="Skills" className="HoverButton" />
+        <LinkButton
+          id="Skills"
+          value="Skills"
+          path="/skills"
+          className="Linkbutton"
+        />
       </div>
     </nav>
   );

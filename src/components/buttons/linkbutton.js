@@ -8,9 +8,15 @@ import "./custombutton.css";
  */
 const LinkButton = ({ value, className, path }) => {
   return (
-    <button className={className ?? "None"}>
-      {path !== undefined ? <a href={path}>{value}</a> : <></>}
-    </button>
+    <div>
+      {path !== undefined ? (
+        <a href={path} className={className ?? "None"}>
+          {value}
+        </a>
+      ) : (
+        <></>
+      )}
+    </div>
   );
 };
 
