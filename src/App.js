@@ -1,23 +1,32 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Aboutme from "./pages/Aboutme";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/about-me",
+    element: <Aboutme />,
+    errorElement: <NotFound />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p></p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Do what you want
-        </a>
+      <header>
+        <Navbar />
       </header>
+      <div className="Content">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
