@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Aboutme from "./pages/Aboutme";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home.js";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
