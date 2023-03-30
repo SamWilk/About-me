@@ -6,7 +6,12 @@ const Navbar = () => {
     <nav className="NavBar">
       <div className="nav-div">
         About me, Sam
-        <LinkButton id="Home" value="Home" path="/" className="Linkbutton" />
+        <LinkButton
+          id="Home"
+          value="Home"
+          path="#MyHeader"
+          className="Linkbutton"
+        />
         <LinkButton
           id="About Me"
           value="About Me"
@@ -15,8 +20,14 @@ const Navbar = () => {
         />
         <LinkButton
           id="Skills"
-          value="Skills"
-          path="/skills"
+          value="Github Projects"
+          path="/contact"
+          className="Linkbutton"
+        />
+        <LinkButton
+          id="Skills"
+          value="Contact Info"
+          path="/contact"
           className="Linkbutton"
         />
       </div>
