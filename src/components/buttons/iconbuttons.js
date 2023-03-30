@@ -26,7 +26,7 @@ const IconButtons = ({ icon, iconLink, className }) => {
 
   if (icon === "email") {
     return (
-      <a className={className} href="mailto: samwilk18@yahoo.com">
+      <a id="Aboutme" className={className} href="mailto: samwilk18@yahoo.com">
         <FaAt />
       </a>
     );

@@ -5,31 +5,33 @@ const Navbar = () => {
   return (
     <nav className="NavBar">
       <div className="nav-div">
-        About me, Sam
-        <LinkButton
-          id="Home"
-          value="Home"
-          path="#MyHeader"
-          className="Linkbutton"
-        />
-        <LinkButton
-          id="About Me"
-          value="About Me"
-          path="/about-me"
-          className="Linkbutton"
-        />
-        <LinkButton
-          id="Skills"
-          value="Github Projects"
-          path="/contact"
-          className="Linkbutton"
-        />
-        <LinkButton
-          id="Skills"
-          value="Contact Info"
-          path="/contact"
-          className="Linkbutton"
-        />
+        <div className="nav-div2">
+          About me, Sam
+          <LinkButton
+            id="Home"
+            value="Home"
+            path="#Top"
+            className="Linkbutton"
+          />
+          <LinkButton
+            id="About Me"
+            value="About Me"
+            path="#Aboutme"
+            className="Linkbutton"
+          />
+          <LinkButton
+            id="Projects"
+            value="Github Projects"
+            path="#GitHub"
+            className="Linkbutton"
+          />
+          <LinkButton
+            id="Skills"
+            value="Contact Info"
+            path="/"
+            className="Linkbutton"
+          />
+        </div>
       </div>
     </nav>
   );

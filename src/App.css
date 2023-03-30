@@ -6,6 +6,12 @@
   background-color: #000000;
 }
 
+.Nav {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
+
 .Content {
   display: flex;
   flex-direction: column;

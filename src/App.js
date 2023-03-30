@@ -5,12 +5,15 @@ import "@fortawesome/fontawesome-svg-core";
 
 function App() {
   return (
-    <div className="App">
-      <header>
+    <div>
+      <div id="Top"></div>
+      <header className="Nav">
         <Navbar />
       </header>
-      <div className="Content">
-        <Home />
+      <div className="App">
+        <div className="Content">
+          <Home />
+        </div>
       </div>
     </div>
   );

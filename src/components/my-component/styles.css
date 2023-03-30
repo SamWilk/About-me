@@ -34,4 +34,6 @@ a {
 
 .photo {
   border-radius: 50%;
+  max-height: 25rem;
+  max-width: 25rem;
 }
