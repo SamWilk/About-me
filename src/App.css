@@ -3,8 +3,11 @@
   flex-direction: column;
   min-width: 100vw;
   text-align: center;
-  background-color: #55fff7;
+  background-color: #000000;
 }
+
+/* #86B5A2
+#545479 */
 
 .Content {
   display: flex;
@@ -15,4 +18,9 @@
   margin-left: 10%;
   margin-right: 10%;
   min-height: 100vh;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #00c9c8;
 }

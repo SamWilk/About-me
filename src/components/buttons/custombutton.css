@@ -27,7 +27,7 @@ button {
 .Linkbutton {
   padding: 1rem;
   background-color: transparent;
-  color: black;
+  color: #00c9c8;
   transition: 0.2s ease;
   text-decoration: none;
 }
@@ -35,7 +35,14 @@ button {
 .Linkbutton:hover {
   transform: scale(1.03);
   padding: 1rem;
-  background-color: blue;
-  color: black;
+  background-color: #47817f;
+  color: #00c9c8;
   text-decoration: none;
+}
+
+.Iconbutton {
+  color: #00c9c8;
+  text-decoration: none;
+  font-size: 36px;
+  margin-top: 0.5rem;
 }
