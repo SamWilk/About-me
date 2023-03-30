@@ -6,9 +6,6 @@
   background-color: #000000;
 }
 
-/* #86B5A2
-#545479 */
-
 .Content {
   display: flex;
   flex-direction: column;
@@ -17,7 +14,7 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 * {
