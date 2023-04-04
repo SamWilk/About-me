@@ -11,7 +11,7 @@ const IconButtons = ({ icon, iconLink, className }) => {
   if (icon === "github") {
     return (
       <a className={className} href={iconLink} target="_blank" rel="noreferrer">
-        <FaGithubSquare />
+        <FaGithubSquare className={className} />
       </a>
     );
   }
@@ -19,7 +19,7 @@ const IconButtons = ({ icon, iconLink, className }) => {
   if (icon === "linkedin") {
     return (
       <a className={className} href={iconLink} target="_blank" rel="noreferrer">
-        <FaLinkedin />
+        <FaLinkedin className={className} />
       </a>
     );
   }
@@ -27,7 +27,7 @@ const IconButtons = ({ icon, iconLink, className }) => {
   if (icon === "email") {
     return (
       <a id="Aboutme" className={className} href="mailto: samwilk18@yahoo.com">
-        <FaAt />
+        <FaAt className={className} />
       </a>
     );
   }
