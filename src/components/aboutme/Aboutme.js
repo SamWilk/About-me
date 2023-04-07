@@ -1,11 +1,12 @@
 import "./Aboutme.css";
 import resume from "../../resume/my-resume.pdf";
+import IconButtons from "../buttons/iconbuttons";
 
 const Aboutme = () => {
   const skillArray = [
     "ViteJs",
-    "ReactJs",
-    "Node Js",
+    "React",
+    "NodeJs",
     "Postgres SQL",
     "MQSQL/T-SQL",
     "Java",
@@ -58,9 +59,17 @@ const Aboutme = () => {
         <div className="skillBracket">
           {splitSkillArray.map((array, idx) => {
             return (
-              <div key={idx}>
+              <div className="skillColumn" key={idx}>
                 {array.map((value, ids) => {
-                  return <li key={ids}>{value}</li>;
+                  return (
+                    <div className="skillCard" key={ids}>
+                      <IconButtons
+                        className="IconbuttonNSSmall"
+                        icon={value.toLowerCase()}
+                      />
+                      {value}
+                    </div>
+                  );
                 })}
               </div>
             );

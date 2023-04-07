@@ -8,7 +8,7 @@ const Github = () => {
   //Call Api to get data
   useEffect(() => {
     async function getData() {
-      const res = await fetch("http://192.168.1.97:4040/githubprojects");
+      const res = await fetch("http://api.sam-wilk.com/githubprojects");
       const body = await res.json();
       setResponse(body);
     }
