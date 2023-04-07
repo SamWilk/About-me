@@ -1,11 +1,11 @@
 import "./styles.css";
-import ReactPhoto from "./logo192.png";
+import ReactPhoto from "./me.jpeg";
 import IconButtons from "../buttons/iconbuttons";
 
 const MyComponent = () => {
   return (
     <div className="twoColumns">
-      <img src={ReactPhoto} alt="React" />
+      <img id="MyPhoto" src={ReactPhoto} alt="React" className="photo" />
       <div className="MyHeader">
         <p className="MyName">Sam Wilk</p>
         <p className="accentNote">Software Engineer</p>

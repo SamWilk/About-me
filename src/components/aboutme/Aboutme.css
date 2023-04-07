@@ -1,0 +1,35 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  min-height: 50vh;
+}
+
+.ContainerTitle {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.skillBracket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+p.AboutPara {
+  font-size: 18px;
+}
+
+b {
+  text-decoration: underline;
+}
+
+.resumeTag {
+  transition: 0.2s ease;
+}
+
+.resumeTag:hover {
+  color: white;
+}

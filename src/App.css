@@ -6,8 +6,11 @@
   background-color: #000000;
 }
 
-/* #86B5A2
-#545479 */
+.Nav {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+}
 
 .Content {
   display: flex;
@@ -17,7 +20,7 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 * {
