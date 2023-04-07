@@ -5,7 +5,13 @@ import {
   FaReact,
   FaNodeJs,
 } from "react-icons/fa";
-import { SiNextdotjs, SiPostgresql, SiCsharp } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiPostgresql,
+  SiCsharp,
+  SiDigitalocean,
+  SiNginx,
+} from "react-icons/si";
 /**
  * Takes a Icon picture and a respective link
  * Must have iconLink to work
@@ -16,6 +22,17 @@ import { SiNextdotjs, SiPostgresql, SiCsharp } from "react-icons/si";
  */
 const IconButtons = ({ icon, iconLink, className }) => {
   switch (icon) {
+    case "deployed":
+      return (
+        <>
+          <div className={className}>
+            <SiDigitalocean className={className} />
+          </div>
+          <div className={className}>
+            <SiNginx className={className} />
+          </div>
+        </>
+      );
     case "c#":
       return (
         <div className={className}>

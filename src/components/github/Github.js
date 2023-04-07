@@ -8,7 +8,7 @@ const Github = () => {
   //Call Api to get data
   useEffect(() => {
     async function getData() {
-      const res = await fetch("http://api.sam-wilk.com/githubprojects");
+      const res = await fetch("https://api.sam-wilk.com/githubprojects");
       const body = await res.json();
       setResponse(body);
     }
@@ -47,6 +47,9 @@ const Github = () => {
           )}
           {HubCard.csharpflag && (
             <IconButtons className="IconbuttonNoScale" icon="c#" />
+          )}
+          {HubCard.deployedflag && (
+            <IconButtons className="IconbuttonNoScale" icon="deployed" />
           )}
         </span>
       </a>
