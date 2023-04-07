@@ -25,3 +25,11 @@ p.AboutPara {
 b {
   text-decoration: underline;
 }
+
+.resumeTag {
+  transition: 0.2s ease;
+}
+
+.resumeTag:hover {
+  color: white;
+}

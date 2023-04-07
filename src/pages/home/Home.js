@@ -6,16 +6,18 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <body id="HomeBody" className="HomeBody">
+    <div id="HomeBody" className="HomeBody">
       <MyComponent />
       <DivBar />
       <div id="AboutMe">
         <Aboutme />
       </div>
+      <DivBar />
       <div id="GitHub">
         <Github />
       </div>
-    </body>
+      <DivBar />
+    </div>
   );
 };
 

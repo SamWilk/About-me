@@ -51,16 +51,16 @@ const Aboutme = () => {
         <p className="AboutPara">
           Check out my{" "}
           <a href={resume} target="_blank" rel="noreferrer">
-            <b>Resume</b>
+            <b className="resumeTag">Resume</b>
           </a>
         </p>
         <h2>Here are a handful of skills I have</h2>
         <div className="skillBracket">
           {splitSkillArray.map((array, idx) => {
             return (
-              <div>
-                {array.map((value, idx) => {
-                  return <li>{value}</li>;
+              <div key={idx}>
+                {array.map((value, ids) => {
+                  return <li key={ids}>{value}</li>;
                 })}
               </div>
             );
