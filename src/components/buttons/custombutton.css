@@ -58,3 +58,11 @@ button {
   font-size: 36px;
   margin-top: 0.5rem;
 }
+
+.IconbuttonNSSmall {
+  color: #00c9c8;
+  text-decoration: none;
+  font-size: 36px;
+  margin-top: 0.3rem;
+  transform: scale(0.8);
+}
