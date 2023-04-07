@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SamWilk/About-me/static/css/main.6f6f4e2e.css",
-    "main.js": "/SamWilk/About-me/static/js/main.a9723cb1.js",
-    "static/js/787.bf6be429.chunk.js": "/SamWilk/About-me/static/js/787.bf6be429.chunk.js",
-    "static/media/me.jpeg": "/SamWilk/About-me/static/media/me.e6fbae5643985da03027.jpeg",
-    "static/media/my-resume.pdf": "/SamWilk/About-me/static/media/my-resume.de61229b102b70001c57.pdf",
-    "index.html": "/SamWilk/About-me/index.html",
-    "main.6f6f4e2e.css.map": "/SamWilk/About-me/static/css/main.6f6f4e2e.css.map",
-    "main.a9723cb1.js.map": "/SamWilk/About-me/static/js/main.a9723cb1.js.map",
-    "787.bf6be429.chunk.js.map": "/SamWilk/About-me/static/js/787.bf6be429.chunk.js.map"
+    "main.css": "/SamWilk/static/css/main.6f6f4e2e.css",
+    "main.js": "/SamWilk/static/js/main.e15a6aeb.js",
+    "static/js/787.bf6be429.chunk.js": "/SamWilk/static/js/787.bf6be429.chunk.js",
+    "static/media/me.jpeg": "/SamWilk/static/media/me.e6fbae5643985da03027.jpeg",
+    "static/media/my-resume.pdf": "/SamWilk/static/media/my-resume.de61229b102b70001c57.pdf",
+    "index.html": "/SamWilk/index.html",
+    "main.6f6f4e2e.css.map": "/SamWilk/static/css/main.6f6f4e2e.css.map",
+    "main.e15a6aeb.js.map": "/SamWilk/static/js/main.e15a6aeb.js.map",
+    "787.bf6be429.chunk.js.map": "/SamWilk/static/js/787.bf6be429.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f6f4e2e.css",
-    "static/js/main.a9723cb1.js"
+    "static/js/main.e15a6aeb.js"
   ]
 }
