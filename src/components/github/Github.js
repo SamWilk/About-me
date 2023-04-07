@@ -48,6 +48,9 @@ const Github = () => {
           {HubCard.csharpflag && (
             <IconButtons className="IconbuttonNoScale" icon="c#" />
           )}
+          {HubCard.deployedflag && (
+            <IconButtons className="IconbuttonNoScale" icon="deployed" />
+          )}
         </span>
       </a>
     );
