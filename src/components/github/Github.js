@@ -43,7 +43,7 @@ const Github = () => {
             <IconButtons className="IconbuttonNoScale" icon="nextjs" />
           )}
           {HubCard.psqlflag && (
-            <IconButtons className="IconbuttonNoScale" icon="psql" />
+            <IconButtons className="IconbuttonNoScale" icon="postgres sql" />
           )}
           {HubCard.csharpflag && (
             <IconButtons className="IconbuttonNoScale" icon="c#" />

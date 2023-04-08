@@ -47,7 +47,7 @@ b {
 }
 
 .skillCard {
-  padding: 0.5rem;
+  padding: 0.75rem;
   border: 1px solid white;
   display: flex;
   flex-direction: row;
