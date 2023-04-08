@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Github.css";
 import IconButtons from "../buttons/iconbuttons";
+import Loading from "../loading/Loading";
 
 const Github = () => {
   const [response, setResponse] = useState("");
@@ -22,7 +23,6 @@ const Github = () => {
     let HubCard = card.props;
     let splitGitHub = HubCard.projectlink.split("/");
     let title = splitGitHub.pop();
-    console.log(HubCard);
     return (
       <a
         className="ProjectCard"
@@ -43,7 +43,7 @@ const Github = () => {
             <IconButtons className="IconbuttonNoScale" icon="nextjs" />
           )}
           {HubCard.psqlflag && (
-            <IconButtons className="IconbuttonNoScale" icon="psql" />
+            <IconButtons className="IconbuttonNoScale" icon="postgres sql" />
           )}
           {HubCard.csharpflag && (
             <IconButtons className="IconbuttonNoScale" icon="c#" />
@@ -67,7 +67,7 @@ const Github = () => {
             })}
           </>
         ) : (
-          <></>
+          <Loading />
         )}
       </div>
     </div>
