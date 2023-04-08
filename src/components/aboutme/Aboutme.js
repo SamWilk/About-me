@@ -1,6 +1,8 @@
 import "./Aboutme.css";
 import resume from "../../resume/my-resume.pdf";
 import IconButtons from "../buttons/iconbuttons";
+import Experience from "../experience/Experience";
+import DivBar from "../stlyecomponents/divbar";
 
 const Aboutme = () => {
   const skillArray = [
@@ -55,6 +57,11 @@ const Aboutme = () => {
             <b className="resumeTag">Resume</b>
           </a>
         </p>
+        <div>
+          <DivBar />
+          <Experience />
+          <DivBar />
+        </div>
         <h2>Here are a handful of skills I have</h2>
         <div className="skillBracket">
           {splitSkillArray.map((array, idx) => {
