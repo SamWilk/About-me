@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Loading from "../loading/Loading";
-import DivBar from "../stlyecomponents/divbar";
 
 const Experience = () => {
   const [experinces, setExperinces] = useState();
@@ -13,10 +12,33 @@ const Experience = () => {
     }
     fetchData();
   }, []);
+
+  const ExoCard = (exp) => {
+    console.log(exp.props);
+    const card = exp.props;
+    return (
+      <div>
+        <h2>{card.role}</h2>
+        <h3>
+          {card.workplace}
+          {card.currentpostion === true ? <>, Current Postion</> : <></>}
+        </h3>
+      </div>
+    );
+  };
+
   return (
     <div>
-      <h2>Professional Experience</h2>
-      {experinces !== undefined ? <div>Done Loading</div> : <Loading />}
+      <h1>Professional Experience</h1>
+      {experinces === undefined ? (
+        <Loading />
+      ) : (
+        <>
+          {experinces.map((obj) => {
+            return <ExoCard key={obj.id} props={obj} />;
+          })}
+        </>
+      )}
     </div>
   );
 };
