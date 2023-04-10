@@ -23,11 +23,12 @@ const Aboutme = () => {
     "Express Js",
     "Python",
     "C",
+    "Bicep",
   ];
 
   const splitSkillArray = [];
   while (skillArray.length !== 0) {
-    splitSkillArray.push(skillArray.splice(0, 3));
+    splitSkillArray.push(skillArray.splice(0, 1));
   }
 
   return (

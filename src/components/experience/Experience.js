@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Loading from "../loading/Loading";
+import "./Experience.css";
 
 const Experience = () => {
   const [experinces, setExperinces] = useState();
@@ -22,13 +23,13 @@ const Experience = () => {
     const endTime = time2.split("T");
     return (
       <div>
-        <h2>{card.role}</h2>
-        <h3>{card.workplace}</h3>
-        <p>
+        <h2 className="role">{card.role}</h2>
+        <h3 className="workplace">{card.workplace}</h3>
+        <p className="timeworked">
           {startTime[0]} -{" "}
           {card.currentpostion === true ? <>Current</> : <>{endTime[0]}</>}
         </p>
-        <p>{card.description}</p>
+        <p className="description">{card.description}</p>
       </div>
     );
   };
