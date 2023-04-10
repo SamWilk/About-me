@@ -25,12 +25,6 @@ const Navbar = () => {
             path="#GitHub"
             className="Linkbutton"
           />
-          <LinkButton
-            id="Skills"
-            value="Contact Info"
-            path="/"
-            className="Linkbutton"
-          />
         </div>
       </div>
     </nav>
