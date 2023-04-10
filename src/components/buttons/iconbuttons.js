@@ -23,6 +23,7 @@ import {
   SiC,
   SiExpress,
   SiMicrosoftsqlserver,
+  SiArm,
 } from "react-icons/si";
 /**
  * Takes a Icon picture and a respective link
@@ -44,6 +45,12 @@ const IconButtons = ({ icon, iconLink, className }) => {
             <SiNginx className={className} />
           </div>
         </>
+      );
+    case "bicep":
+      return (
+        <div className={className}>
+          <SiArm className={className} />
+        </div>
       );
     case "java":
       return (
