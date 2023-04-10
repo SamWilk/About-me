@@ -16,13 +16,19 @@ const Experience = () => {
   const ExoCard = (exp) => {
     console.log(exp.props);
     const card = exp.props;
+    let time = card.datestarted;
+    const startTime = time.split("T");
+    let time2 = card.dateended;
+    const endTime = time2.split("T");
     return (
       <div>
         <h2>{card.role}</h2>
-        <h3>
-          {card.workplace}
-          {card.currentpostion === true ? <>, Current Postion</> : <></>}
-        </h3>
+        <h3>{card.workplace}</h3>
+        <p>
+          {startTime[0]} -{" "}
+          {card.currentpostion === true ? <>Current</> : <>{endTime[0]}</>}
+        </p>
+        <p>{card.description}</p>
       </div>
     );
   };
