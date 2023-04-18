@@ -37,3 +37,32 @@ a {
   max-height: 25rem;
   max-width: 25rem;
 }
+
+@media (max-width: 854px) {
+  .twoColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    min-height: 40vh;
+  }
+
+  .photo {
+    border-radius: 50%;
+    max-height: 13rem;
+    max-width: 13rem;
+  }
+
+  .MyName {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .accentNote {
+    font-size: smaller;
+    font-weight: 400;
+    margin: 0;
+  }
+}

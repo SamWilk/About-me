@@ -40,21 +40,4 @@
     text-align: center;
     background-color: #000000;
   }
-
-  .Mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vw;
-    min-height: 100vh;
-  }
-
-  .Nav {
-    display: none;
-  }
-
-  .Content {
-    display: none;
-  }
 }

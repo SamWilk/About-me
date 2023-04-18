@@ -9,8 +9,7 @@ const Aboutme = () => {
     "ViteJs",
     "React",
     "NodeJs",
-    "Postgres SQL",
-    "MQSQL/T-SQL",
+
     "Java",
     "JavaScript",
     "Css",
@@ -24,6 +23,8 @@ const Aboutme = () => {
     "Python",
     "C",
     "Bicep",
+    "Postgres SQL",
+    "MQSQL/T-SQL",
   ];
 
   const splitSkillArray = [];
@@ -63,26 +64,28 @@ const Aboutme = () => {
           <Experience />
           <DivBar />
         </div>
-        <h2>Here are a handful of skills I have</h2>
-        <div className="skillBracket">
-          {splitSkillArray.map((array, idx) => {
-            return (
-              <div className="skillColumn" key={idx}>
-                {array.map((value, ids) => {
-                  return (
-                    <div className="skillCard" key={ids}>
-                      <IconButtons
-                        className="IconbuttonNSSmall"
-                        icon={value.toLowerCase()}
-                      />
-                      {value}
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          })}
-        </div>
+        <span className="span">
+          <h2>Here are a handful of skills I have</h2>
+          <div className="skillBracket">
+            {splitSkillArray.map((array, idx) => {
+              return (
+                <div className="skillColumn" key={idx}>
+                  {array.map((value, ids) => {
+                    return (
+                      <div className="skillCard" key={ids}>
+                        <IconButtons
+                          className="IconbuttonNSSmall"
+                          icon={value.toLowerCase()}
+                        />
+                        {value}
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </div>
+        </span>
       </div>
     </div>
   );
